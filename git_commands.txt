@@ -1,0 +1,21 @@
+GIT WORKFLOW COMMANDS
+
+git status                 # Check working tree status.
+git branch                 # List local branches.
+git switch main             # Switch to main.
+git pull origin main        # Update local main from GitHub.
+git switch -c feature/name  # Create and switch to a new branch.
+git add .                   # Stage all changes.
+git commit -m "Message"     # Commit staged changes.
+git push -u origin feature/name  # Push new branch to GitHub.
+git push                    # Push commits to the current branch.
+git fetch origin            # Download remote updates without merging.
+git merge main              # Merge local main into the current branch.
+git diff                    # View unstaged changes.
+git diff --staged           # View staged changes.
+git switch feature/name     # Switch to your feature branch.
+git branch -d feature/name  # Delete a merged local branch.
+git push origin --delete feature/name  # Delete a remote branch.
+
+GITHUB PULL REQUEST:
+Push your branch, then open a PR on GitHub to merge it into main.
