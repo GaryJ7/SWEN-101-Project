@@ -18,4 +18,4 @@ git branch -d branch_name  # Delete a merged local branch.
 git push origin --delete branch_name  # Delete a remote branch.
 
 GITHUB PULL REQUEST:
-Push your branch, then open a PR on GitHub to merge it into main.
+Push your branch, then open a Pull Request on GitHub to merge it into main.
