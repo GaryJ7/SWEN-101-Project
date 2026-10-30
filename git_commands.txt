@@ -19,3 +19,21 @@ git push origin --delete branch_name  # Delete a remote branch.
 
 GITHUB PULL REQUEST:
 Push your branch, then open a Pull Request on GitHub to merge it into main.
+
+Steps to commit changes from branch to main:
+
+1. Commit your work on your current branch
+git add .
+git commit -m "commit message"
+
+2. Switch the main branch
+git checkout main
+
+3. Make sure your local main is up to date with GitHub's main branch by pulling
+git pull origin main
+
+4. Merge your branch with main
+git merge <your-branch-name>
+
+5. Push your updated local main to GitHub's main branch
+git push origin main
