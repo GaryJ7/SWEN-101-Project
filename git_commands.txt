@@ -10,7 +10,7 @@ git commit -m "Message"     # Commit staged changes.
 git push -u origin branch_name  # Push new branch to GitHub.
 git push                    # Push commits to the current branch.
 git fetch origin            # Download remote updates without merging.
-git merge main              # Merge local main into the current branch.
+git merge main              # Merge local main into the current branch. Use if out of date
 git diff                    # View unstaged changes.
 git diff --staged           # View staged changes.
 git switch branch_name     # Switch to your feature branch.
