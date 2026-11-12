@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+
+        <style>
+            h1 {
+                color:white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 500%;
+                border: 2px solid powderblue;
+                padding: 10px;
+                margin: auto;
+            }
+
+            .big-button {
+                padding: 25px 250px;       /* Increases space inside the button (top/bottom, left/right) */
+                font-size: 64px;          /* Increases the text size */
+                border-radius: 8px;       /* Rounds the corners */
+                background-color: #007BFF;/* Sets button color */
+                color: white;             /* Sets text color */
+                border: none;             /* Removes default border */
+                cursor: pointer;          /* Changes cursor to a hand on hover */
+            }
+
+            .big-button:hover {
+                background-color: #0056b3; /* Darkens button when hovered */
+            }
+        </style>
+    </head>
+
+    <body style="background-color:orange">
+        <h1>
+            RIT UNITED
+        </h1>
+
+        <p>
+            This is the home page.
+        </p>
+
+        <button onclick="window.location.href='transportation.html'" type="button" class="big-button">Transportation</button>
+
+        <button onclick="window.location.href='food_delivery.html'" type="button" class="big-button">Food Delivery</button>
+    </body>
+</html>
