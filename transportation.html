@@ -3,33 +3,32 @@
 <html> <!--Perhaps too many div containers-->
 
     <head>
-        <link rel="stylesheet" href="transport_delivery.css">
+        <link rel="stylesheet" href="css/transport.css">
     </head>
 
     <body>
 
-        <h1 style="text-align: center; font-size: 5rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+        <h1 style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
             TRANSPORTATION
         </h1>       
-         <!--This is the map and orange box-->
-        <div style="display: flex; justify-content: center; align-items: stretch; gap: 40px; width: 100%; max-width: 1400px; margin: 40px auto;">
+        <div class = "flexbox_layout">
 
     <!-- Map -->
-    <div style="flex: 1; min-width: 0; min-height: 500px; background-color: #dc6a13; color: white; padding: 20px; border-radius: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div class = "map">
         <iframe
             src="https://maps.rit.edu/"width="100%"height="500px"style="border:0;"loading="lazy">
         </iframe>
     </div>
 
     <!-- Dropdown menus -->
-    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: space-around; gap: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div class = "dropdown_config">
 
 
-        <div style="width: 100%; background: white; box-shadow: 0px 4px 15px rgba(234, 108, 5, 0.2); padding: 20px; border-radius: 8px; font-size: clamp(24px, 3vw, 50px); text-align: center;">
+        <div class = "driver_box_config">
 
             <label for="driver">Choose a driver:</label>
 
-            <select id="driver" name="driver" style="width: 100%; height: 80px; font-size: 28px; padding: 10px 20px; border-radius: 8px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <select id="driver" name="driver" class = "driver_text">
                 <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"value="gary">Gary</option>
                 <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"value="zenan">Ze Nan</option>
                 <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"value="zach">Zach</option>
@@ -39,25 +38,25 @@
         </div>
 
         <!-- Location -->
-        <div style="width: 100%; background: white; box-shadow: 0px 4px 15px rgba(234, 108, 5, 0.2); padding: 20px; border-radius: 8px; font-size: clamp(24px, 3vw, 50px); text-align: center;">
+        <div class = "location_box">
 
             <label for="location">Choose a location:</label>
 
-            <select id="location" name="location" style="width: 100%; height: 80px; font-size: 28px; padding: 10px 20px; border-radius: 8px;">
-                <option value="dsp">DSP</option>
-                <option value="global-village">Global Village</option>
-                <option value="infinity-quad">Infinity Quad</option>
-                <option value="sentinel-quad">Sentinel Quad</option>
+            <select id="location" name="location" class = location_text>
+                <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "value="dsp">DSP</option>
+                <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "value="global-village">Global Village</option>
+                <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "value="infinity-quad">Infinity Quad</option>
+                <option style = "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "value="sentinel-quad">Sentinel Quad</option>
             </select>
 
         </div>
 
-    </div>
+    </div> <!--end of dropdown_config-->
 
-    </div>
+    </div> <!-- end flexbox layout-->
 
         <div style="display: flex; justify-content: center; width: 100%; margin: 30px auto">
-            <button style="width: 80%; max-width: 650px; min-height: 70px; font-family: 'Franklin Gothic Medium', Arial, sans-serif;";type="button" onclick="window.location.href='food_delivery.html'">
+            <button class = "button_class"; type="button" onclick="window.location.href='pay_up.html'">
                     Pay Up
             </button>
         </div>

@@ -1,0 +1,95 @@
+body
+{
+    margin: 0; 
+    padding: 10px 25px; 
+    min-height: 100vh; 
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column;
+}
+
+h1
+{
+    text-align: center; 
+    font-size: clamp(2rem, 4vw, 5rem); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin: 5px 0 15px 0;
+}
+
+.main_flexbox
+{
+    display: flex; 
+    flex: 1; 
+    min-height: 0; 
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 40px; 
+    width: 100%;
+}
+
+.food_map
+{
+    flex: 1;
+    min-width: 0;
+    background-color: #dc6a1378;
+    color: white; 
+    padding: 20px; 
+    border-radius: 15px;
+}
+
+.dropdown_flex
+{
+    flex: 1; 
+    min-width: 0;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    gap: 20px;
+}
+
+.driver_dropdown
+{
+    width: 100%; 
+    background: white; 
+    box-shadow: 0px 4px 15px rgba(234, 108, 5, 0.2); 
+    padding: 20px; 
+    border-radius: 8px; 
+    font-size: clamp(24px, 3vw, 50px); 
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; box-sizing: border-box;
+}
+
+.driver_text
+{
+    width: 100%;
+    height: 80px;
+    font-size: 28px;
+    padding: 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button_style
+{
+    width: 100%; 
+    min-height: 180px; 
+    background-color: #dc6a13; 
+    color: white; padding: 20px; 
+    border-radius: 15px; 
+    font-size: clamp(30px, 4vw, 70px); 
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.button_text
+{
+    width: 80%; 
+    max-width: 650px; 
+    min-height: 70px; 
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
