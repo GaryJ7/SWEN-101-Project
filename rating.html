@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rate Experience</title>
+  <link rel="stylesheet" href="css/rating.css">
+</head>
+<body>
+
+  <div class="box">
+    <h2>Rate the Experience</h2>
+  </div>
+
+  <div class="box">
+    <p><strong>Driver:Gary</strong> | Date: November 19th/1:53AM | Charge: $74</p>
+  </div>
+
+  <div class="box">
+    <img src="ritchie.png" id="r1" class="ritchie" onclick="rate(1)">
+    <img src="ritchie.png" id="r2" class="ritchie" onclick="rate(2)">
+    <img src="ritchie.png" id="r3" class="ritchie" onclick="rate(3)">
+    <img src="ritchie.png" id="r4" class="ritchie" onclick="rate(4)">
+    <img src="ritchie.png" id="r5" class="ritchie" onclick="rate(5)">
+    <p id="rating-text">Click a RITchie to rate (0 / 5)</p>
+  </div>
+
+  <button type="button" id="home-btn" onclick="window.location.href='home_page.html'">Home</button>
+
+  <script>
+    function rate(stars) {
+      for (let i = 1; i <= 5; i++) {
+        if (i <= stars) {
+          document.getElementById("r" + i).style.opacity = "1";
+        } else {
+          document.getElementById("r" + i).style.opacity = "0.3";
+        }
+      }
+      document.getElementById("rating-text").innerText = "Rating: " + stars + " / 5";
+    }
+  </script>
+
+</body>
+</html>
