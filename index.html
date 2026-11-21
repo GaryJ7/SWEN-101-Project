@@ -14,7 +14,7 @@
             .loginbutton {
                 background-color: #04AA6D;
                 color: white;
-                font-size: 15px;
+                font-size: 30px;
                 padding: 12px;
                 border: none;
                 border-radius: 5px;
@@ -24,21 +24,49 @@
             .loginbutton:hover {
                 background-color:#038958;
             }
+
+            .login-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                margin-top: 75px;
+            }
+
+            input[type="text"] {
+                width: 300px;        /* Makes the box wider (increase or decrease as needed) */
+                padding: 12px 15px;  /* Makes the box taller and adds space inside for typing */
+                font-size: 16px;     /* Makes the text inside the box bigger */
+                border: none;        /* Optional: removes the default harsh border */
+                border-radius: 6px;  /* Optional: rounds the corners to match your Log In button */
+            }
+
+            label {
+                font-size: 24px;
+                font-weight: bold;
+            }
         </style>
 
         <title>Sign In Page</title>
     </head>
 
     <body style="background-color:orange">
-        <h1>
-            RIT UNITED
-        </h1>
+        <header>
+            <h1>
+                RIT UNITED
+            </h1>
+        </header>
 
-        <label for="fname">First name: </label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name: </label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <button onclick="window.location.href='home_page.html'" class="loginbutton">Log In</button>
+        <div class="login-container">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <button onclick="window.location.href='home_page.html'" class="loginbutton">Log In</button>
+        </div>
+
 
     </body>
 

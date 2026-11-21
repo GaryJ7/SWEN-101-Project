@@ -6,8 +6,6 @@
         </title>
 
         <style>
-
-
             h1 {
                 color:white;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -31,36 +29,62 @@
                 background-color: #0056b3; /* Darkens button when hovered */
             }
 
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px; /* Space between buttons */
+                margin-top: 50px;
+            }
 
+            .button-container button {
+                width: 80%; /* Makes both buttons the exact same width */
+            }
+
+            .profile-box {
+                position: absolute;
+                text-align: center;
+            }
+
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+
+            .profile-label {
+                margin: 0 0 0 0;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+            }
         </style>
-
-
     </head>
 
     <body style="background-color:orange">
+        <!-- This is the RIT UNITED logo and the profile picture -->
+        <header>
+            <div class="profile-box">
+                <a href="profile.html">
+                    <img src="daniel.png" alt="Profile picture of Daniel Krutz" class="profile-picture">
+                    <p class="profile-label">Profile</p>
+                </a>
+            </div>
 
+            <h1>
+                RIT UNITED
+            </h1>
+        </header>
 
-        <h1>
-            RIT UNITED
-        </h1>
-
-        <div>
+        <!-- These are the transportation and food delivery buttons -->
+        <div class="button-container">
             <button onclick="window.location.href='transportation.html'" type="button" class="transport-delivery-button">
                 Transportation
             </button>
-
-            <br>
-            <br>
 
             <button onclick="window.location.href='food_delivery.html'" type="button" class="transport-delivery-button">
                 Food Delivery
             </button>
         </div>
 
-        <button onclick="window.location.href='food_delivery.html'" type="button" class="big-button">Food Delivery</button>
-
-        <button onclick="window.location.href='profile.html'" type="button" class="big-button">Settings</button>
     </body>
-
-
 </html>
